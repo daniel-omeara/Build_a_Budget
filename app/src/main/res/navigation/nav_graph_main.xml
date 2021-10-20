@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/budgetFragment">
+
+    <fragment
+        android:id="@+id/budgetFragment"
+        android:name="com.danielomeara.buildabudget.features.bottomnavigation.budget.presentation.fragments.BudgetFragment"
+        android:label="BudgetFragment" >
+        <action
+            android:id="@+id/action_budgetFragment_to_addBudgetItemFragment"
+            app:destination="@id/addBudgetItemFragment" />
+        <action
+            android:id="@+id/action_budgetFragment_to_addEditBudgetCategoryFragment"
+            app:destination="@id/addEditBudgetCategoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addBudgetItemFragment"
+        android:name="com.danielomeara.buildabudget.features.bottomnavigation.budget.presentation.fragments.AddEditBudgetItemFragment"
+        android:label="AddBudgetItemFragment">
+        <argument
+            android:name="categoryId"
+            app:argType="long" />
+        <argument
+            android:name="budgetItem"
+            app:argType="com.danielomeara.buildabudget.features.bottomnavigation.budget.domain.models.BudgetItem"
+            app:nullable="true" />
+        <argument
+            android:name="budgetId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_addBudgetItemFragment_to_budgetFragment"
+            app:destination="@id/budgetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.danielomeara.buildabudget.features.bottomnavigation.profile.presentation.fragments.ProfileFragment"
+        android:label="ProfileFragment" />
+
+    <fragment
+        android:id="@+id/budgetSummaryFragment"
+        android:name="com.danielomeara.buildabudget.features.bottomnavigation.budgetsummary.presentation.fragments.BudgetSummaryFragment"
+        android:label="BudgetSummaryFragment" />
+
+    <fragment
+        android:id="@+id/addEditBudgetCategoryFragment"
+        android:name="com.danielomeara.buildabudget.features.bottomnavigation.budget.presentation.fragments.AddEditBudgetCategoryFragment"
+        android:label="AddEditBudgetCategoryFragment">
+        <action
+            android:id="@+id/action_addEditBudgetCategoryFragment_to_budgetFragment"
+            app:destination="@id/budgetFragment" />
+        <argument
+            android:name="budgetCategory"
+            app:argType="com.danielomeara.buildabudget.features.bottomnavigation.budget.domain.models.BudgetCategory"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+        <argument
+            android:name="budgetId"
+            app:argType="long"
+            app:nullable="false"/>
+    </fragment>
+
+</navigation>

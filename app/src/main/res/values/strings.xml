@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Build a Budget</string>
+
+<!--____________________LOGIN FEATURE____________________-->
+    <!-- Screen Names -->
+    <string name="login">Login</string>
+    <string name="register_now">Register Now?</string>
+
+    <!--  Hints  -->
+    <string name="confirm_password_hint">Confirm password…</string>
+    <string name="username_hint">Username…</string>
+    <string name="password_hint">Password…</string>
+
+    <!-- Content Descriptions -->
+    <string name="app_icon_content_description">App Icon</string>
+    <string name="back_icon_content_description">Back</string>
+
+    <!-- Actions -->
+    <string name="sign_up">Sign up</string>
+
+<!--____________________BUDGET FEATURE____________________-->
+    <string name="budget">Budget</string>
+    <string name="profile">Profile</string>
+    <string name="monthly_income">Monthly Income</string>
+    <string name="spent">Spent</string>
+    <string name="planned">Planned</string>
+    <string name="add_item">Add Item</string>
+    <string name="add_category">Add Category</string>
+    <string name="budget_name">Budget name</string>
+    <string name="label">Label</string>
+    <string name="amount">Amount</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="delete_item">Delete item</string>
+    <string name="currency_zero">$0.00</string>
+
+<!--____________________PROFILE FEATURE____________________-->
+    <string name="current_monthly_income">Current Monthly Income:</string>
+    <string name="current_monthly_spent">Current Monthly Spent:</string>
+    <string name="balance">Balance:</string>
+    <string name="budget_summary">Budget Summary</string>
+    <string name="estimated_monthly_income">Estimated Monthly Income:</string>
+    <string name="logout">Log Out</string>
+    <string name="name">Name…</string>
+    <string name="category_name">Category name…</string>
+
+</resources>

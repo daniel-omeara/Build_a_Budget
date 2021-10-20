@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/budgetFragment"
+        android:icon="@drawable/ic_build_a_budget"
+        app:showAsAction="ifRoom"
+        android:title="@string/budget" />
+
+    <item
+        android:id="@+id/budgetSummaryFragment"
+        android:icon="@drawable/ic_baseline_pie_chart_24"
+        app:showAsAction="ifRoom"
+        android:title="@string/budget_summary" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_person_24"
+        app:showAsAction="ifRoom"
+        android:title="@string/profile" />
+
+
+</menu>

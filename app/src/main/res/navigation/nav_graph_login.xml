@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_login"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.danielomeara.buildabudget.features.login.presentation.fragments.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerNowFragment"
+            app:destination="@id/registerNowFragment" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="password"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerNowFragment"
+        android:name="com.danielomeara.buildabudget.features.login.presentation.fragments.RegisterNowFragment"
+        android:label="RegisterNowFragment" >
+        <action
+            android:id="@+id/action_registerNowFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>
